@@ -1,0 +1,84 @@
+.tab-list {
+  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+}
+
+.tab-list-active {
+  background-color: white;
+  border: solid #ccc;
+  border-width: 1px 1px 0 1px;
+}
+
+#chairs ul {
+  list-style: none;
+}
+#chairs label
+{ float:left; width: 100px; }
+
+
+
+
+.smallBox::before
+{
+  content:".";
+  width:15px;
+  height:15px;
+  float:left;
+  margin-right:10px;
+}
+.greenBox::before
+{
+  content:"";
+  background:Green;
+}
+.redBox::before
+{
+  content:"";
+  background:Red;
+}
+.emptyBox::before
+{
+  content:"";
+  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    background-color:#ccc;
+}
+
+
+
+
+
+input[type=checkbox] {
+    width:0px;
+    margin-right:18px;
+}
+
+input[type=checkbox]:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align:middle;
+    text-align: center;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    background-color:#ccc;
+}
+
+input[type=checkbox]:checked:before {
+    background-color:Green;
+    font-size: 15px;
+}
+input[type=checkbox][disabled]:before {
+  opacity: 1 !important;
+  outline: 2px solid red;
+}
+
+#bilet_alma{
+  float:right
+}
